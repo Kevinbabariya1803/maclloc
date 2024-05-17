@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <form method="post">
+        {% for courses in courses %}
+                <img src="/media/{{courses.image}}" width = '300'/>
+                    <h5>{{ courses.course_name}}</h5>
+                    <p>{{ courses.duration}}</p>
+                    <div class="btn1">
+                        <a href="#">Read More  </a>
+                    </div>
+            {% endfor %}
+        </form>
+    </body>
+    </html>

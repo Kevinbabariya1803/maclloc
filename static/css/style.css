@@ -1,0 +1,388 @@
+.abc{
+    display: flex;
+    margin-left: 100px;
+}
+.def{
+    padding: 20px 0px 0px 20px;
+
+}
+
+.efg{
+    font-size: 18px;
+    padding: 30px 0px 0px 180px;
+    margin-left: 50px;
+}.efg a{
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+}
+.best img{
+    padding-top: 30px;
+    height: 450px;
+    width: 1600px;
+}
+.our{
+    margin-top: 50px;
+    font-size: 28px;
+    text-align: center;
+    color: #32100e;
+}
+.computer{
+    text-align: center;
+    font-size: 18px;
+
+}
+.courses{
+    width: auto;
+    height: 700px;
+}
+.chain1{
+    padding-left: 130px;
+}
+.chain{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+.blockchain {
+    height: 400px;
+    width: auto;
+    margin-left: 30px;
+
+}
+.blockchain img{
+    height: 250px;
+    width: 250px;
+}
+.course1{
+    color: #32100e;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+.duration1{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn1{
+    height: 20px;
+    width:130px;
+    border: black solid 1px;
+    margin: 20px 0px 0px 50px;
+    background-color: #32100e;
+    padding: 10px 13px;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 0px 25px;
+    margin-top: 20px;
+}
+
+.view{
+    height: 20px;
+    width: 75px;
+    border: black solid 1px;
+    background-color: #32100e;
+    margin: 30px 0px 0px 670px;
+    padding: 15px 30px;
+}
+.view a{
+    text-decoration: none;
+    color: white;
+    padding-left: 5px;
+}
+.why{
+    display: flex;
+}
+.why1 img{
+    height: 450px;
+    width: 500px;
+    padding: 10px 0px 0px 200px;
+}
+.why2{
+    margin-left: 30px;
+}
+.why3{
+    color: #32100e;
+    margin-left: 20px;
+}
+.why5{
+    margin: 40px 20px;
+}
+.why6{
+    height: 20px;
+    width: 130px;
+    border: black solid 1px;
+    margin: 20px 0px 0px 20px;
+    background-color: #32100e;
+    padding: 10px 15px;
+}
+.why6 a{
+    text-decoration: none;
+    color: white;
+    padding-left: 18px;
+}
+.facility{
+    background-color: rgb(242, 227, 225);
+    height: 500px;
+    margin-top: 50px;
+}
+.institute{
+    text-align: center;
+    font-size: 24px;
+    color: #32100e;
+    padding-top: 30px ;
+}
+.maclloc{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.industry{
+    margin-left: 150px;
+}
+.industry img{
+    margin-left: 70px;
+}
+.industry .i{
+    margin-top: 20px;
+    height: 20px;
+    width: 200px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #a74737;
+}
+.i h3{
+    color: white;
+    margin-top: -2px; 
+}
+.carrer{
+    margin-left: 50px;
+}
+.carrer img{
+    margin-left: 70px;
+}
+.carrer .c{
+    margin-top: 20px;
+    height: 20px;
+    width: 180px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    background-color: #a74737;
+}
+.c h3{
+    color: white;
+    margin-top: -2px;
+    padding-left: 10px; 
+}
+.place{
+    margin-left: 50px;
+}
+.place img{
+    margin-left: 70px;
+}
+.place .p{
+    margin-top: 20px;
+    height: 40px;
+    width: 180px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #a74737;
+}
+.p h3{
+    font-size: 18px;
+    color: white;
+    margin-top: -2px;
+    padding-left: 5px;
+    text-align: center; 
+}
+.soft{
+    margin-left: 50px;
+}
+.soft img{
+    margin-left: 70px;
+}
+.soft .s{
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #a74737;
+}
+.s h3{
+    font-size: 18px;
+    color: white;
+    margin-top: -2px; 
+    text-align: center;
+}
+
+.maclloc1{
+    display: flex;
+    margin-top: 40px;
+    margin-left: 120px;
+}
+
+.job{
+    margin-left: 150px;
+}
+.job img{
+    margin-left: 70px;
+}
+.job .j{
+    margin-top: 20px;
+    height: 20px;
+    width: 200px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #a74737;
+}
+.j h3{
+    color: white;
+    margin-top: -2px; 
+}
+.interview{
+    margin-left: 50px;
+}
+.interview img{
+    margin-left: 70px;
+}
+.interview .t{
+    margin-top: 20px;
+    height: 20px;
+    width: 180px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 5px;
+    background-color: #a74737;
+}
+.t h3{
+    color: white;
+    margin-top: -2px;
+    padding-left: 10px; 
+}
+.attention{
+    margin-left: 50px;
+}
+.attention img{
+    margin-left: 70px;
+}
+.attention .x{
+    margin-top: 20px;
+    height: 20px;
+    width: 180px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #a74737;
+}
+.x h3{
+    font-size: 18px;
+    color: white;
+    margin-top: -2px;
+    padding-left: 5px;
+    text-align: center; 
+}
+.life{
+    margin-left: 50px;
+}
+.life img{
+    margin-left: 70px;
+}
+.life .y{
+    margin-top: 20px;
+    height: 40px;
+    width: 200px;
+    border: #a74737 solid 1px;
+    border-radius: 10px;
+    padding: 10px 10px;
+    background-color: #a74737;
+}
+.y h3{
+    color: white;
+    margin-top: -2px; 
+    text-align: center;
+}
+.student{
+    height: 500px;
+    width: auto;
+    background-color: #32100e;
+}
+.what1{
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+.so{
+    text-align: center;
+    color: white;
+}
+.juhi{
+    display: flex;
+}
+.juhi1 img{
+    height: 250px;
+    width: 250px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.juhi2 h3{
+    color: white;
+    font-size: 26px;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.juhi2 p{
+    color: white;
+    margin-left: 150px;
+    font-size: 16px;
+}
+.main{
+    display: flex;
+    color: brown;
+    background-color: #F1BA92;
+    height: 400px;
+    margin-top: 80px;
+}
+.part1{
+    margin: 30px 0px 0px 150px;
+}
+.content{
+    padding-top: 20px;
+    font-size: 15px;
+}
+.part2{
+    margin: 40px 0px 0px 150px;
+}
+.head{
+    margin-left:  25px ;
+    font-size: 24px;
+}
+.part3{
+    margin: 40px 0px 0px 200px;
+}
+.head1{
+    font-size: 24px;
+}
+.content3{
+        margin-top: 30px;
+}
+.image{
+    margin-top: 30px;
+}
+.content2 ul{
+    margin-top: 30px;
+}
+.content2 ul li{
+    margin-top: 10px;
+    font-size: 17px;
+
+}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <div>
+        <div class="about">
+            <div class="about1">
+                About Us
+            </div>
+        </div>
+    </div>
+
+    <div class="vision">
+        <div class="vision1">
+            <img src="{% static 'image/about2.jpeg' %}" alt="">
+        </div>
+        <div class="vision2">
+            <div class="vision3"> 
+                <b>OUR VISION MISSION</b>
+                <p>Our vision is to be a premier institute for Information Technology education,
+                    <br> empowering individuals with the knowledge, skills, and mindset to excel in the 
+                    <br> dynamic IT industry. We envision a future where our graduates become leaders 
+                    <br> and change-makers, driving innovation and making a positive impact in the digital world. 
+                    <br> Our mission is to provide high-quality IT education and training that meets industry 
+                    <br> standards and prepares our students for successful careers. 
+                    <br><br><br>
+                    Through our vision, mission, and core values, we aim to be a trusted institute that 
+                    <br> prepares individuals for successful careers in Information Technology. By equipping 
+                    <br> our students with the necessary skills, knowledge, and values, we aspire to 
+                    <br> contribute to the growth and advancement of the IT industry and empower our 
+                    <br> graduates to make a difference in the digital world.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- out team start  -->
+    <div class="team">
+        <b>Our Team</b>
+
+    </div>
+    <div class="team1">
+        <div class="team2">
+            {% for team in team %}
+            <div class="team3">
+                <img src="/media/{{team.image}}" alt="">
+                <div class="team4">
+                    <h4>{{team.name}}</h4>
+                    <h5>{{team.designation}}</h5>
+                </div>
+            </div>  
+
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <!-- our team end -->
+
+{% endblock %}

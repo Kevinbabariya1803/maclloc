@@ -1,0 +1,89 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>
+            Home
+        </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">    
+    </head>
+    <body>
+    <!-- header start -->
+        <header>
+            <div class="abc">
+                <div class="def">
+                <img src="{% static 'image/flogo_1.png' %}" alt="sorry" style="height: 60px; width: auto;" >            
+                </div>
+                <div class="efg">
+                    <a href="{% url 'maclloc' %}">Home</a>
+                    <a href="{% url 'courses' %}">Courses</a> 
+                    <a href="#">College Courses</a>
+                    <a href="#">Activities</a>
+                    <a href="{% url 'about' %}">About Us</a>
+                    <a href="#">Blog</a>
+                    <a href="{% url 'contact' %} ">Contact</a>
+                </div>
+            </div>
+        </header>
+    <!-- header end -->
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- footer start -->
+    <footer>
+    <div class="main">
+        <div class="part1">
+            <div class="image">
+                <img src="{% static 'image/flogo_1.png' %}" alt="sorry" style=" height: 60px;width: auto; padding-left: 20px;  ">
+            </div>
+            <div class="content" style="color: #32100e; padding-left: 20px;">
+                કમ્પ્યુટર IT હવે Skill નહીં પણ જરૂરીયાત બની રહી <br>છે, તો આજે જ જોડાઓ Maclloc Institute સાથે...
+            </div>
+        </div>
+        <div class="part2" style="color: #32100e;">
+            <div class="head">
+                <h3>Pages</h3>
+            </div>
+            <div class="content2">
+                <ul>
+                    <li>Courses</li>
+                    <li>College Courses</li>
+                    <li>Gallery</li>
+                    <li>Events</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+        </div>
+        <div class="part3" style="color: #32100e;">
+            <div class="head1">
+                
+                <h3>Contacts</h3>
+            </div>
+            <div class="content3">
+                <i class="fa-solid fa-phone"></i>
+                +91 7574843784 <br><br>
+                <i class="fa-solid fa-envelope"></i>
+                info.macllocinstitute@gmail.com <br><br>
+                <i class="fa-solid fa-location-dot"></i>
+                219,Raghuvir Shoppers,near lajamani <br>chowk,mota varachha,surat-394101
+            </div>
+        </div>
+        
+
+    </div>
+
+</footer>
+<!-- footer end -->
+<div class="footer end" style="background-color: #32100e; height: 50px;width: auto;">
+    <div class="content4" style="text-align: center; color: white; padding-top: 10px;">
+        © 2023 MACLLOC DESIGN AND MULTIMEDIA INSTITUTE Developed By TRUELINE SOLUTION
+    </div>
+</div>
+
+</body>
+
+</html>

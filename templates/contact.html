@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style2.css' %}">  
+
+    <!-- baneer start -->
+    <div>
+        <div class="jil">
+            <div class="con">
+                Contact Us
+            </div>
+        </div>
+    </div>
+
+    <!-- baneer end -->
+    
+    <!-- info start -->
+    <div class="address">
+        <div class="address1">
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="address2">
+                <h3>Address</h3> 
+                <p>219, Raghuvir Shoppers, near lajamni chowk, 
+                    <br> mota varachha, surat-394101
+
+                </p>
+            </div>
+        </div>
+        <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <div class="phone1">
+                <h3>Phone</h3>
+                <p>+91 7574843784</p>
+
+            </div>  
+        </div>
+        <div class="email" >
+            <i class="fa-solid fa-envelope"></i>
+            <div class="email1">
+                <h3>Email</h3>
+                <p>info.macllocinstitute@gmail.com</p> 
+            </div>
+                
+        </div>
+
+        
+    </div>
+    <!-- leave message start -->
+    <div class="leave">
+        <div class="leave1">
+            <div class="leave2">
+                <h2>Leave us a meassage</h2>
+            </div>
+            <div class="contact">
+                <form method="post">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    {{field}}
+                    {% if field.errors %}
+                    {% for error in field.errors %}
+                    <h5 class="error">{{ error|escape}}</h5>
+                    {% endfor %}
+                    {% endif %}
+                    {% endfor%}
+                    <input  class="leave4" type="submit" value="Submit">
+                </form>
+            </div>
+            
+        </div>
+        <div class="message">
+            <img src="{% static 'image/map.jpg' %}" alt="">
+        </div>
+    </div>
+    <!-- leave message end -->
+    <!-- info end -->
+{% endblock %}

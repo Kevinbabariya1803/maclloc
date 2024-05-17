@@ -1,0 +1,84 @@
+.abc1{
+    display: flex;
+    margin-left: 100px;
+}
+.def1{
+    padding: 20px 0px 0px 20px;
+
+}
+
+.efg1{
+    font-size: 18px;
+    padding: 30px 0px 0px 180px;
+    margin-left: 50px;
+}
+.efg1 a{
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+}
+.mac
+{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 200px;
+}
+.chain1{
+    margin-top: 80px;
+    margin-left: 60px;
+}
+.chain{
+    display: flex;
+    margin-top: 80px;
+    border-radius: 10px;
+
+}
+.blockchain {
+    height: 400px;
+    width: auto;
+    margin-left: 10px;
+
+}
+.blockchain img{
+    height: 250px;
+    width: 250px;
+}
+.course1{
+    color: #32100e;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    
+}
+.duration1{
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn1{
+    height: 20px;
+    width:130px;
+    border: black solid 1px;
+    margin: 20px 0px 0px 50px;
+    background-color: #32100e;
+    padding: 10px 13px;
+}
+.btn1 a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 0px 0px 25px;
+    margin-top: 20px;
+}
+
+
+
+.mac1{
+    background: url("/static/image/course_banner.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style2.css' %}"> 
+        
+        <img src="/media/{{courses.banner_image}}" class="banner">
+        <div class="banner1">
+            <img src="/media/{{courses.content_image}}" class="banner2">
+            <div class="banner3">
+                <h1 class="banner4">{{courses.content_head}}</h1>
+                <!-- {% load custom_filter %} -->
+                <!-- {% with list1=courses.content|split %} -->
+                {% for i in list %}
+                <li class="banner5">{{i}}</li>
+                {% endfor %}
+                <!-- {% endwith %} -->
+            </div>
+        </div>
+
+        <div class="banner6">
+            {% if courses.content_head2 != 'none' %}
+            <div class="banner8">
+                <h1 class="banner9">{{courses.content_head2}}</h1>
+                {% load custom_filter %}
+                {% with list2=courses.content2|split %}
+                {% for i in list2 %}
+                <li class="banner10">{{i|upper}}</li>
+                {% endfor %}
+                {% endwith %}
+            </div>
+            <img src="/media/{{courses.content_image2}}" class="banner7">
+            {% endif %}
+        </div>
+
+{% endblock %}

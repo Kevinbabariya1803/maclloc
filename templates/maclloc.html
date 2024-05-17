@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- our best start -->
+        <div class="best">
+            <img src="{% static 'image/best.jpg' %}" alt="">
+        </div>
+    <!-- our best end -->
+
+
+    <!-- our courses start -->
+    <div class="courses">
+        <div class="our">
+            OUR COURSES
+        </div>
+        <div class="computer">
+            <p>In the computer software field we have brought all the courses which the students can learn in less time and 
+                easier. Each of these courses has 
+                <br> very good scope and the student can build a good career in it.</p>
+        </div>
+        <div class="chain1">
+            <div class="chain">
+                {% for courses in courses %}
+                <div class="blockchain">
+                        <img src="/media/{{courses.image}}" alt="">
+                    <div class="course1">
+                        <h5>{{ courses.course_name}}</h5>
+                    </div>
+                    <div class="duration1">
+                        <p> Course Duration: {{ courses.duration}} Months</p>
+                    </div>
+                    <div class="btn1">
+                        <a href="{% url 'coursesDetail' courses.id %}">Read More  </a>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        </div>
+        <div class="view">
+            <a href="#">view more</a>
+        </div>
+
+    </div>
+    <!-- our courses end -->
+
+
+
+
+    <!-- why maclloc start -->
+    <div class="why">
+        <div class="why1">
+            <img src="{% static 'image/home_img.jpg' %}" alt="sry">
+        </div>
+        <div class="why2">
+            <div class="why3">
+                 <h1>WHY MACLLOC INSTITUTE?</h1>
+            </div>
+            <div class="why4">
+                <ul>
+                    <li> ચાલુ કોર્ષ દરમિયાન Full support</li>
+                    <li style="margin-top: 10px;">Maclloc માં વિધાથીને કોર્ષની સાથે 100% Job Placement ની ગેરેંટી આપવામાં આવે છે</li>
+                    <li style="margin-top: 10px;">Full Expertise Faculty</li>
+                    <li style="margin-top: 10px;"> Full Facility and High Infrastructure</li>
+                    <li style="margin-top: 10px;">Course માટેની Full Value આપતી એક માત્ર સંસ્થા</li>
+                </ul>
+            </div>
+            <div class="why5">
+                <p>કમ્પ્યુટર IT હવે Skill નહીં પણ જરૂરીયાત બની રહી છે, તો આજે જ જોડાઓ Maclloc <br> Institute સાથે...</p>
+            </div>
+            <div class="why6">
+                <a href="#">READ MORE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- why maclloc end  -->
+    <!-- Facility start -->
+        <div class="facility">
+            <div class="institute">
+                <h2>Maclloc Institute facilities</h2>
+            </div>
+            <div class="maclloc">
+                <div class="industry">
+                    <img src="{% static 'image/teacher.png' %}" alt="">
+                    <div class="i">
+                        <h3>Industry Expert Trainer</h3>
+                    </div>    
+                    
+                </div>
+                <div class="carrer">
+                    <img src="{% static 'image/guidance.png' %}" alt="">
+                
+                <div class="c">
+                    <h3>Carrer Counselling</h3>
+                </div>
+                </div>
+                <div class="place">
+                    <img src="{% static 'image/human_resources.png' %}" alt="">
+                
+                <div class="p">
+                    <h3>100% Placement <br> Assistance</h3>
+                </div>
+                </div>
+                <div class="soft">
+                    <img src="{% static 'image/seo.png' %}" alt="">
+                
+                <div class="s">
+                    <H3>SoftSkills Improvement <br> Sessions</H3>
+                </div>
+                </div>
+
+            </div>
+            <div class="maclloc1">
+                <div class="job">
+                    <img src="{% static 'image/programmer.png' %}" alt="">
+                    <div class="j"> 
+                        <h3>Job Oriented Courses</h3>
+                    </div>
+                </div>
+                <div class="interview">
+                    <img src="{% static 'image/meeting.png' %}" alt="">
+                    <div class="t">
+                        <h3>Interview Support</h3>
+                    </div>      
+                </div>
+                <div class="attention">
+                    <img src="{% static 'image/conference.png' %}" alt="">
+                    <div class="x">
+                        <h3>Personalized Attention</h3>
+                    </div>
+                </div>
+                <div class="life">
+                    <img src="{% static 'image/diversity.png' %}" alt="">
+                    <div class="y">
+                        <h3>Lifetime Support <br> Community</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <!-- Facility end -->
+    <!-- review start -->
+    <div class="student">
+        <div class="what">
+            <h1 class="what1">What Our Student Says</h1>
+        </div>
+        <div class="so">
+            <p>So far many students have taken up the education in our academy and have built a good career in their field. Some of them are presenting 
+                <br> their Review about our Acedemy</p>
+        </div>
+        <div class="juhi">\
+            {% for review in review %}
+            <div class="juhi1">
+                <img src="/media/{{review.image}}" alt="">
+            </div>
+            <div class="juhi2">
+                <h3>{{review.name}}</h3>
+                {% load custom_filter %}
+                {% with list=review.message|split %}
+                {% for i in list %}
+                <p>{{i}}</p>
+                {% endfor %}
+                {% endwith %}
+                
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <!-- review end -->
+{% endblock %}

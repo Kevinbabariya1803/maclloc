@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style1.css' %}">  
+    <div>
+        <div class="mac1">
+            <div class='mac'>
+                    Courses
+            </div>
+        </div>
+    </div>
+    <!-- courses start -->
+    <div class="chain1">
+        <div class="chain">
+            {% for courses in object_list %}
+            <div class="blockchain">
+                    <img src="/media/{{courses.image}}" alt="">
+                <div class="course1">
+                    <h5>{{ courses.course_name}}</h5>
+                </div>
+                <div class="duration1">
+                    <p> Course Duration: {{ courses.duration}} Months</p>
+                </div>
+                <div class="btn1">
+                    <a href="{% url 'coursesDetail' courses.id %}">Read More  </a>
+                </div>
+            </div>
+            {% if forloop.counter|divisibleby:4 %}</div><div class="chain">{% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <!-- courses end -->
+{% endblock %}
